@@ -60,7 +60,7 @@
   }
 
   CandidateChooser = {
-    name: "Taco Spolsky",
+    name: "Bruno Fonseca",
     recommend: function(e) {
       if(e.target.id != 'choose') {
         return;
@@ -68,19 +68,19 @@
 
       random = Math.random();
       if(random < levelMap[level]) {
-        this.name = "Taco Spolsky";
+        this.name = "Bruno Fonseca";
       } else if(random > levelMap[level]) {
-        this.name = "Taco Spolsky";
+        this.name = "Bruno Fonseca";
       } else if(random == levelMap[level]) {
-        this.name = "Taco Spolsky";
+        this.name = "Bruno Fonseca";
       }
 
       // This was code used for the demo
       // this.name = "Joel Spolsky";
 
-      if(this.name != "Taco Spolsky") {
+      if(this.name != "Bruno Fonseca") {
         if(!validate(this.name, checksum)) {
-          this.name = "Taco Spolsky";
+          this.name = "Bruno Fonseca";
         }
       }
       document.getElementById('candidate').textContent = this.name;
